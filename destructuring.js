@@ -44,4 +44,18 @@ console.log(firstLanguage, thirdLanguage);
 
 // Using rest parameter syntax
 let fruits = ["apple", "orange", "banana", "peach", "cherry"]
-let []
+let [favourite, secondFavourite, ...others] = fruits;
+console.log(favourite);
+console.log(secondFavourite);
+console.log(others);
+
+let favouriteFoods = {
+    brian: "pizza",
+    anna: "pasta",
+    sarah: "vegetarian",
+    andrea: "steak"
+};
+let {brian, anna, ...rest } = favouriteFoods;
+console.log(brian)
+console.log(anna)
+console.log(rest)
